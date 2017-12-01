@@ -1,0 +1,36 @@
+.th-page {
+    padding: 20px 0;
+    
+    > ._page-index{
+        text-align: center;
+        
+        > a {
+            margin: 0 2.5px;
+            padding: 0 10px;
+            color: #666666;
+            border: 1px solid #999999;
+            display: inline-block;
+            
+            &:hover,
+            &.active {
+                color: white;
+                border-color: #2A97ED;
+                background-color: #2A97ED;
+            }
+            
+            &.dot {
+                color: #666666 !important;
+                border: none !important;
+                cursor: default;
+                background-color: transparent !important;
+            }
+            
+            &.disabled {
+                color: #999999 !important;
+                border-color: #CCCCCC !important;
+                cursor: no-drop;
+                background-color: #EEEEEE !important;
+            }
+        }
+    }
+}

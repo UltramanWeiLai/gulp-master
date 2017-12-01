@@ -1,0 +1,18 @@
+<div class="th-page" onselectstart="return false">
+    <div class="_page-sign ng-hide">
+        <span>当前第  <font ng-bind="page"></font>页</span>，
+        <span>每页  <font ng-bind="count"></font>条数据</span>，
+        <span>共<font ng-bind="total"></font>条</span>
+    </div>
+    <div class="_page-index">
+        <a href="javascript:;" ng-class="{ disabled: page == 1 }" ng-click="firstPage()" >首页</a>
+        <a href="javascript:;" ng-class="{ disabled: page == 1 }" ng-click="prevPage()" >上一页</a>
+        
+        <a href="javascript:;" ng-class="{ active: item == page, dot: item == \'...\' }" ng-repeat=" item in pageList track by $index" ng-bind="item" ng-click="changePage(item)" ng-bind="" ></a>
+        
+        <a href="javascript:;" ng-class="{ disabled: page == totalPage }" ng-click="nextPage()" >下一页</a>
+        <a href="javascript:;" ng-class="{ disabled: page == totalPage }" ng-click="tailPage()" >尾页</a>
+        <span>， 共<font ng-bind="totalPage"></font>页</span>，
+        <span>跳到 <input type="number" class="tc" style="width: 40px" ng-model="untilVal" /> 页  <button type="button" class="btn btn-primary" style="padding: 2px 10px; font-size: 14px; vertical-align: bottom" ng-click="untilPage(untilVal)">转跳</button></span>
+    </div>
+</div>

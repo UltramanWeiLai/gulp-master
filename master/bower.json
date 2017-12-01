@@ -1,0 +1,34 @@
+{
+  "name": "master",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "weilai <798008773@qq.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "angular": "^1.6.6",
+    "angular-animate": "^1.6.6",
+    "angular-ui-router": "^1.0.6",
+    "angular-cookies": "^1.6.6",
+    "angular-ui-utils": "^3.0.0",
+    "angular-loading-bar": "^0.9.0",
+    "layer": "^3.0.3",
+    "bootstrap": "^3.3.7",
+    "ngstorage": "^0.3.11",
+    "oclazyload": "^1.1.0",
+    "echarts": "^3.7.1",
+    "adm-dtp": "*",
+    "angular-bootstrap": "^2.5.0",
+    "angular-sanitize": "^1.6.7"
+  }
+}

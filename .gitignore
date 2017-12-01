@@ -57,3 +57,5 @@ typings/
 # dotenv environment variables file
 .env
 
+# 生产目录
+app/
