@@ -6,6 +6,7 @@
 早操作前，请保证你安装了nodejs 和 gulp
 ```操作命令
 npm install // 安装依赖插件
+bower install // 安装依赖库
 gulp // 生产项目
 gulp serve // 启动服务器并自动打开到浏览器
 gulp build // 会将 app 目录删除后 建造压缩文件后的项目
