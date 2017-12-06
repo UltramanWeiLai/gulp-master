@@ -58,4 +58,4 @@ typings/
 .env
 
 # 生产目录
-app/
+/app
