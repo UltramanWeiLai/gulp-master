@@ -8,3 +8,9 @@
 
 // 浏览器的样式重置以及一些常用的基础样式
 @import "public/reset.scss", "public/base.scss";
+
+// 公共组件的样式
+@import "public/th-page-default.scss";
+
+// 自定义样式
+@import "app/index.scss";

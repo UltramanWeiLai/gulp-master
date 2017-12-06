@@ -22,7 +22,7 @@
 		return {
 			restrict:'AE',
 			replace: true,
-			templateUrl: '../tpls/pages/paging.html',
+			templateUrl: './pages/paging.html',
 			scope: { page: '=', count: '=', total: '='},
 			link: function(scope, elm, attr){
 				

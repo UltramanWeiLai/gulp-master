@@ -10,7 +10,7 @@
     angular
     	.module('public')
     	.constant('CONFIG', {
-            PATH: '127.0.0.1:8080',
+            PATH: '',
             AJAXERR: '服务器繁忙，请稍后重试！',
             AJAXCUE: true
         })

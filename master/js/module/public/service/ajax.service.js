@@ -38,8 +38,8 @@
 				url: CONFIG.PATH + src,
 				headers: headers
 			}).then(
-				sendSuccess(res, CONFIG), 
-				sendError(err, CONFIG) 
+				sendSuccess, 
+				sendError 
 			);
     	};
     	
@@ -66,8 +66,8 @@
 				data: data,
 				headers: headers
 			}).then(
-				sendSuccess(res, CONFIG), 
-				sendError(err, CONFIG) 
+				sendSuccess, 
+				sendError 
 			);
     	};
     	
@@ -94,8 +94,8 @@
 				data: data,
 				headers: headers
 			}).then(
-				sendSuccess(res, CONFIG), 
-				sendError(err, CONFIG) 
+				sendSuccess, 
+				sendError 
 			);
     	};
 		
@@ -119,8 +119,8 @@
 						return formData;
 					}
 				}).then(
-					sendSuccess(res, CONFIG), 
-					sendError(err, CONFIG) 
+					sendSuccess, 
+					sendError 
 				);
 		};
 
@@ -129,20 +129,20 @@
 		// --------------------------------------------------------------------
 
 		// 请求成功
-		function sendSuccess(res, CONFIG) {
-			if(CONFIG.AJAXCUE) {
-				console.info('-- ajax -- ' + src);
+		function sendSuccess(res, conf = CONFIG) {
+			if(conf.AJAXCUE) {
+				console.info('-- ajax -- ', res.config.url);
 				console.info(res,'\n');
 			}
 			
-			return res;
+			return res.data;
 		}
 
 		// 请求失败
-		function sendError(err, CONFIG) {
-			if(CONFIG.AJAXCUE) {
+		function sendError(err, conf = CONFIG) {
+			if(conf.AJAXCUE) {
 				console.error(err);
-				layer.msg(CONFIG.AJAXERR);
+				layer.msg(conf.AJAXERR);
 			}
 			
 			return err;
