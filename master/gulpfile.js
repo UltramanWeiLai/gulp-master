@@ -177,7 +177,7 @@ gulp.task('extend', ['extend:layer','extend:image']);
 
 // layer
 gulp.task('extend:layer', function(){
-	return gulp.src('./bower_components/layer/build/**/*.*')
+	return gulp.src('./bower_components/layer/dist/**/*.*')
 		.pipe(gulp.dest(build.js + '/layer'));
 });
 
@@ -225,8 +225,8 @@ gulp.task('watch', function () {
 gulp.task('serve', ['watch'], function(){
     browserSync.init({
         server: {
-            baseDir:"../",
-            index: "app/index.html"
+            baseDir:"../app/",
+            index: "index.html"
         },
         port: 8080
     });
